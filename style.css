@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url('/anh-ne.jpg'); */
+    background-color:ivory ;
+}
+
+
+
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+#header{
+    background-color:rgb(236, 222, 205) ;
+    height: 73px;
+}
+
+
+a#logo{
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+nav{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin-top: 6px;
+    padding: 0;
+    text-align: center;
+}
+
+#main-menu li{
+    position: relative;
+    width: 100px;
+}
+
+#main-menu li a{
+    font-weight: 600;
+    color: black;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+#main-menu li a:hover{
+    color:teal
+}
+
+/* bac 2 */
+#main-menu ul.sub-menu {
+    display: none;
+    margin-top: 0px;
+    position: absolute;
+    padding: 20px 0px;
+    list-style: none;
+    padding: auto;
+}
+
+
+#main-menu ul.sub-menu li{
+    border-radius: 2px 10px 10px 10px;
+    border: 1px solid rgb(15, 16, 14);
+    background-color: rgb(196, 183, 163);
+}
+
+#main-menu > li:hover ul.sub-menu{
+    display: block;
+}
+
+/* bac 3 */
+#main-menu ul.sub-menu ul.sub-menu{
+    display: none;
+    margin-top: 0px;
+    position: absolute;
+    padding: 20px 0px;
+    list-style: none;
+}
+#main-menu ul.sub-menu > li:hover ul.sub-menu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: -88px;
+}
+#main-menu ul.sub-menu li ul.sub-menu li{
+    background-color: rgb(225, 219, 209);
+}
